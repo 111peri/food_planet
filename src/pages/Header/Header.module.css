@@ -1,0 +1,85 @@
+
+.header {
+    width: 1200px;
+    max-height: 40px;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.logo img {
+    Width: 224px;
+    Height: 40px;
+    margin-left: 200px;
+    margin-right: 100px;
+    padding: 8px;
+
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 30px;
+
+}
+
+.menuItem a {
+    text-decoration: none;
+    color: #333;
+    padding: 60px;
+
+}
+.menuItem a:hover,
+.menuItem a:focus,
+.menuItem a:active {
+    color: #FF583E;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.phoneIcon span {
+    margin-right: 200px;
+    font-weight: bold;
+}
+.phoneIcon {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Header.module.css */
+/* ... (ваши существующие стили) */
+
+.icons {
+    display: flex; /* Разместить иконки внутри блока по горизонтали */
+    align-items: center; /* Выравнивание иконок и текста вертикально по центру */
+}
+
+.phoneIcon,
+.cartIcon {
+    display: flex; /* Разместить иконку и текст по горизонтали */
+    align-items: center; /*е иконки и текста вертикально по центру */
+    margin-right: 20px;
+}
+
+.phoneIconImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+}
+
+.cartIcon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+    margin-left: 115px;
+}
+
