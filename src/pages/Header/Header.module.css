@@ -6,12 +6,12 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;}
+    align-items: center;
+}
 
 .logo img {
     Width: 224px;
     Height: 40px;
-    margin-left: 200px;
     margin-right: 100px;
     padding: 8px;
 
@@ -55,18 +55,16 @@
 }
 
 
-/* Header.module.css */
-/* ... (ваши существующие стили) */
 
 .icons {
-    display: flex; /* Разместить иконки внутри блока по горизонтали */
-    align-items: center; /* Выравнивание иконок и текста вертикально по центру */
+    display: flex;
+    align-items: center;
 }
 
 .phoneIcon,
 .cartIcon {
-    display: flex; /* Разместить иконку и текст по горизонтали */
-    align-items: center; /*е иконки и текста вертикально по центру */
+    display: flex;
+    align-items: center;
     margin-right: 20px;
 }
 

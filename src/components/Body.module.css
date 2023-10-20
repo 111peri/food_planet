@@ -1,4 +1,9 @@
-
+body {
+    width: 1200px;
+    height: max-content;
+    padding-left: 224px;
+    padding-right: 224px;
+}
 .bannerContainer {
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,6 @@
     flex: 1;
     width: 419px;
     height: 256px;
-    padding-left:  224px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -44,5 +48,5 @@
 .bannerImage img {
     width: 659px;
     height: 455px;
-    padding-right: 224px;
+
 }
