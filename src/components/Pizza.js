@@ -13,17 +13,10 @@ function Pizza(props) {
                 <img src={image} alt={title} />
             </div>
             <div className={styles.pizzaInfo}>
-                {/*<h2>{title}</h2>*/}
-                {/*<p>{description}</p>*/}
-                {/*<h3>{price} сом</h3>*/}
-                {/*<div className={styles.addToCart}>*/}
-                {/*    <span>-</span>*/}
-                {/*    <span>1</span>*/}
-                {/*    <span>+</span>*/}
-                {/*    <div>*/}
-                {/*        <button>В корзину</button>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                <h2>{title}</h2>
+                <p>{description}</p>
+
+
             </div>
         </div>
     );

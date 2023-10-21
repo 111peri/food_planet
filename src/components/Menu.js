@@ -4,7 +4,7 @@ import React from "react";
 
 export function Menu () {
     return (
-        <div className={styles.menuLinks}>
+        <div className={`${styles.menuLinks} ${styles.newArrivalLinks}`}>
             <p className={styles.newArrivalMenu}>Меню</p>
             <a href="/pizza">Пицца</a>
             <a href="/burger">Бургер</a>
