@@ -1,22 +1,41 @@
 .pizzaContainer {
+    width: 1152px;
+    height: 1013px;
     display: flex;
-    flex-wrap:  nowrap;
-    gap: 32px;
-    padding-top: 60px;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
-.bgContainer {
-    width: 264px;
-    height: 348px;
-    color: black;
+.search {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-right: 120px;
+}
+.search p {
+    padding-top: 5px;
+    padding-right: 20px;
+}
+ .search button {
+     width: 160px;
+     height: 40px;
+     border: 1px solid  #C4C4C4;
+     background-color: #FFFFFF;
+ }
+ .dropDown {
+     width: 10px;
+     height: 6px;
+     color: #6C6C6C;
+     padding-left: 3px;
+ }
 
-}
 
 .pizzaItem {
-    display: flex;
-    flex-direction: column;
+    width: 264px;
+    height: 338px;
     border-radius: 40px;
     text-align: center;
-    gap:32px;
 
 }
 
@@ -40,25 +59,37 @@
 
 
 .pizzaInfo {
-    padding-top: 50px;
+    padding-top: 90px;
     width: 264px;
     height: 348px;
-    text-align: left;
+    text-align: center;
     border-radius: 40px;
-    background: #333;
+    background: #FFF;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.10);
 }
 
 .pizzaInfo h2,
 .pizzaInfo h3,
 .pizzaInfo p {
-
-    color: #fff;
+    display: flex;
+    color: #333;
     text-align: center;
 }
 
 
 .pizzaImage {
-    margin-bottom: -70px;
+    margin-bottom: -80px;
     text-align: center;
     z-index: 100;
+}
+.showMoreButton {
+    width: 200px;
+    height: 48px;
+    border: 1px solid  #FF583E;
+    border-radius: 40px;;
+    background-color: #FFFFFF;
+
+}
+.showMoreButton button  {
+    text-align: center;
 }

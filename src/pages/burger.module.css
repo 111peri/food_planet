@@ -1,0 +1,32 @@
+.burgerContainer {
+    width: 1152px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+
+.burgerContainerBg {
+    width: 264px;
+    height: 348px;
+    background-color: #2B4241;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 88px;
+    margin-left: 22px;
+}
+
+.burgerDescription {
+    color: white;
+    z-index: 100;
+
+}
+
+.burgerDescription img {
+    margin-top: -70px;
+}
+.addCartButton {
+
+}

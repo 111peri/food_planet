@@ -1,20 +1,27 @@
 import React from 'react';
 import {Header} from "./Header/Header";
-import Body from "../components/Body";
-import NewArrivals from "../components/NewArrivals";
+import Banner from "../components/Banner";
 import {Menu} from "../components/Menu";
-import {PizzaContainer} from "../components/PizzaContainer";
+import Pizza from "../components/Pizza";
+import Burger from "../pages/Burger";
+import Reviews from "./Reviews";
+import AboutAs from "./AboutAs";
+
 
 
 export function MainPage() {
     return (
         <div>
             <Header/>
-            <Body/>
-            <NewArrivals/>
+            <Banner/>
             <Menu/>
-            <PizzaContainer/>
+            <Burger/>
+            <Menu/>
+            <Pizza/>
+            <AboutAs/>
+            <Reviews/>
         </div>
     );
 }
 
+export default MainPage

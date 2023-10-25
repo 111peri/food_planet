@@ -1,10 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Импортируйте Link из react-router-dom
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import LOgo from '../../components/assets/image/LOgo.png';
 import phoneIcon from '../../components/assets/phoneIcon.png';
 
+styles.cartCount = undefined;
+
 export function Header(props) {
+    let [cartCount, setCartCount] = useState(0);
+
+    
+
+
     return (
         <div className={styles.header}>
             <div className={styles.logo}>
@@ -12,9 +19,9 @@ export function Header(props) {
             </div>
             <div className={styles.navigation}>
                 <ul>
-                    <li className={styles.menuItem}><Link to="/" className={styles.txtColor}>Главная</Link></li>
-                    <li className={styles.menuItem}><Link to="/delivery" className={styles.txtColor}>Доставка</Link></li>
-                    <li className={styles.menuItem}><Link to="/contacts" className={styles.txtColor}>Контакты</Link></li>
+                    <li className={styles.menuItem}><Link to="/" >Главная</Link></li>
+                    <li className={styles.menuItem}><Link to="/delivery" >Доставка</Link></li>
+                    <li className={styles.menuItem}><Link to="/contacts" >Контакты</Link></li>
                 </ul>
             </div>
             <div className={styles.icons}>
@@ -23,12 +30,13 @@ export function Header(props) {
                     <span>+996500405988</span>
                 </div>
                 <div className={styles.cartIcon}>
-                    <img src={'https://cdn.icon-icons.com/icons2/902/PNG/512/shopping-cart_icon-icons.com_69303.png'} alt={'https://cdn.icon-icons.com/icons2/902/PNG/512/shopping-cart_icon-icons.com_69303.png'} />
+                    <span className={styles.cartCount}>{cartCount}</span>
                 </div>
             </div>
         </div>
     );
 }
+
 
 
 

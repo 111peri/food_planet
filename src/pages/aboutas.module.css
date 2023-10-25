@@ -1,0 +1,22 @@
+.aboutAsContainer {
+    width: 1120px;
+    height: 346px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;;
+    margin-left: 120px ;
+
+}
+
+.icon {
+    width: 88px;
+    height: 88px;
+    padding-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.aboutAsItems {
+    width: 256px;
+    height: 184px;
+    text-align: center;
+}

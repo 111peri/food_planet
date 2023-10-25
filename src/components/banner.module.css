@@ -1,0 +1,56 @@
+.bannerContainer {
+    width: 100%;
+    min-height: 600px;
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+
+
+}
+.bannerContent {
+    width: 419px;
+    height: 256px;
+    margin-top: 144px;
+    margin-left: 80px;
+}
+.bannerContent h1 {
+
+    font-size: 36px;
+    font-weight: 900;
+    color: #254F4C;
+
+}
+.bannerContent h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.buttonStyle {
+    background-color: #FF583E;
+    width: 216px;
+    height: 49px;
+    border-radius: 40px;
+    border: #FF583E;
+    margin-top: 16px;
+    margin-bottom: 136px;
+}
+
+
+.bannerImage {
+    width: 659px;
+    height: 455px;
+    align-items: end;
+    padding-right: 80px;
+    margin-bottom: 33px;
+}
+
+.buttonStyle .countContainer {
+    text-decoration: none ;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF583E;
+}
+button img {
+    padding: 5px;
+}

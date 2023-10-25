@@ -1,18 +1,23 @@
-import styles from "./NewArrivals.module.css";
 import React from "react";
+import { NavLink } from "react-router-dom";
+import styles from "./menu.module.css"
 
 
-export function Menu () {
+export function Menu() {
     return (
-        <div className={`${styles.menuLinks} ${styles.newArrivalLinks}`}>
-            <p className={styles.newArrivalMenu}>Меню</p>
-            <a href="/pizza">Пицца</a>
-            <a href="/burger">Бургер</a>
-            <a href="/sushi">Суши</a>
-            <a href="/rolls">Роллы</a>
-            <a href="/salads">Салаты</a>
-            <a href="/desserts">Десерты</a>
-            <a href="/drinks">Напитки</a>
+        <div id="menu" className={styles.menuItems}>
+            <h3>Меню</h3>
+            <div className={styles.menuLink}>
+            <NavLink to="/pizza">Пицца</NavLink>
+            <NavLink to="/burger" className={styles.hoverLink}>Бургер</NavLink>
+            <NavLink to="/sushi">Суши</NavLink>
+            <NavLink to="/rolls">Роллы</NavLink>
+            <NavLink to="/salads">Салаты</NavLink>
+            <NavLink to="/desserts">Десерты</NavLink>
+            <NavLink to="/drinks">Напитки</NavLink>
+            </div>
         </div>
-    )
+    );
 }
+
+

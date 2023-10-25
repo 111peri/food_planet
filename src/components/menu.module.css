@@ -1,0 +1,41 @@
+.menuItems {
+    display: flex;
+    text-align: start;
+    margin-right: 60px;
+    margin-left: 160px;
+}
+
+.menuLink {
+    width: 600px;
+    height: 32px;
+    font-size:16px ;
+    font-weight: 400;
+    color: #1D3130;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.menuLink a {
+    text-decoration: none;
+    width: 600px;
+    height: 32px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLink a:hover {
+    color: #FF583E
+}
+
+
+.menuItems h3 {
+    font-size: 25px ;
+    color: #254F4C;
+    font-weight: 900;
+    padding-right: 164px;
+}
+

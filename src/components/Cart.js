@@ -1,11 +1,8 @@
-
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from './cart.module.css'
 
-
-
-
-
-export function CartButton({ cartCount, setCartCount, onAddToCart }) {
+function Cart({ cartCount, setCartCount, onAddToCart, product }) {
     const [count, setCount] = useState(0);
 
     const incrementCount = () => {
@@ -20,17 +17,28 @@ export function CartButton({ cartCount, setCartCount, onAddToCart }) {
 
     const addToCart = () => {
         onAddToCart(product, count);
-        setCartCount(cartCount + 1); // Увеличивает общий счетчик в корзине
+        setCartCount(cartCount + count); // Увеличиваем общее количество товаров в корзине
+        setCount(0); // Сбрасываем счетчик
     };
 
     return (
-        <div>
-            <span onClick={incrementCount}>+</span>
-            <span>{count}</span>
-            <span onClick={decrementCount}>-</span>
-            <div onClick={addToCart}>Добавить в корзину</div>
+        <div className={styles.countContainer}>
+            <div className={styles.count}>
+                <span onClick={decrementCount}>-</span>
+                <span>{count}</span>
+                <span onClick={incrementCount}>+</span>
+            </div>
+            <button onClick={addToCart}>Добавить в корзину</button>
         </div>
     );
 }
 
-export default CartButton;
+Cart.propTypes = {
+    cartCount: PropTypes.number,
+    setCartCount: PropTypes.func,
+    onAddToCart: PropTypes.func,
+    product: PropTypes.object
+};
+
+export default Cart;
+

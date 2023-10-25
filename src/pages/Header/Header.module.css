@@ -3,17 +3,17 @@
     width: 1200px;
     max-height: 40px;
     color: #333;
-    padding: 20px;
+    padding: 20px 80px  ;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 .logo img {
     Width: 224px;
     Height: 40px;
-    margin-right: 100px;
-    padding: 8px;
+    margin-left: 80px;
 
 }
 
@@ -24,7 +24,7 @@
 }
 
 .navigation li {
-    margin-right: 30px;
+    padding-right: 30px;
 
 }
 
@@ -42,7 +42,7 @@
 .icons {
     display: flex;
     align-items: center;
-    padding: 60px;
+    padding-top: 12px;
 }
 
 .phoneIcon span {

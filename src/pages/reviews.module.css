@@ -1,0 +1,34 @@
+.reviewsContainer {
+    width: 1120px;
+    height: 346px;
+    display: flex;
+    gap: 32px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.userAvatar {
+    width: 80px;
+    height: 80px;
+    margin-left: 80px ;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color: #6C6C6C;
+}
+
+.reviewItem {
+    width: 248px;
+    height: 324px;
+    border: 2px solid #1D3130;
+    border-radius: 40px;
+
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+}
+.userName {
+    margin-left: 25px;
+}
