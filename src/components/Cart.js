@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
-import styles from './NewArrivals.module.css';
 
-function CartButton({ cartCount, setCartCount, onAddToCart }) {
+import React, { useState } from 'react';
+
+
+
+
+
+export function CartButton({ cartCount, setCartCount, onAddToCart }) {
     const [count, setCount] = useState(0);
 
     const incrementCount = () => {
@@ -15,19 +19,18 @@ function CartButton({ cartCount, setCartCount, onAddToCart }) {
     };
 
     const addToCart = () => {
-        onAddToCart();
+        onAddToCart(product, count);
         setCartCount(cartCount + 1); // Увеличивает общий счетчик в корзине
     };
 
     return (
         <div>
-            <span onClick={incrementCount} className={styles.incrementStyle}>+</span>
+            <span onClick={incrementCount}>+</span>
             <span>{count}</span>
-            <span onClick={decrementCount} className={styles.decrementStyle}>-</span>
-            <button onClick={addToCart} className={styles.buttonStyle}>Добавить в корзину</button>
+            <span onClick={decrementCount}>-</span>
+            <div onClick={addToCart}>Добавить в корзину</div>
         </div>
     );
 }
 
 export default CartButton;
-;

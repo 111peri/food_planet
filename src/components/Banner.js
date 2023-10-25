@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Body.module.css';
-import burger from '../components/assets/image/burger.png';
+import burger from './assets/image/burger.png';
 
 function Body() {
     return (
