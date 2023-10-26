@@ -1,0 +1,43 @@
+.footerContainer {
+    width: auto;
+    height: 152px;
+    background-color: #254F4C;
+    margin-top: 68px;
+    display: flex;
+}
+
+.footerLogo img {
+    color: #FCFCFC;
+    margin-top:58px;
+    margin-left: 120px;
+    margin-right: 129px;
+
+}
+.footerLinkItems {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 60px;
+    margin-top: 64px ;
+
+
+}
+.footerLinkItems  Li Link{
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.footerContacts
+{
+    display: flex;
+    color: #FCFCFC;
+    margin-left: 68px;
+    margin-top: 64px;
+}
+.footerContacts img {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: 3px;
+
+}

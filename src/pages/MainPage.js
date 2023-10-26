@@ -6,6 +6,7 @@ import Pizza from "../components/Pizza";
 import Burger from "../pages/Burger";
 import Reviews from "./Reviews";
 import AboutAs from "./AboutAs";
+import Footer from "./Footer";
 
 
 
@@ -20,6 +21,7 @@ export function MainPage() {
             <Pizza/>
             <AboutAs/>
             <Reviews/>
+            <Footer/>
         </div>
     );
 }

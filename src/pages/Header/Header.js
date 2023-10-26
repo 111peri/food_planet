@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import LOgo from '../../components/assets/image/LOgo.png';
-import phoneIcon from '../../components/assets/phoneIcon.png';
+import phoneIcon from '../../components/assets/image/phoneIcon.png';
 
 styles.cartCount = undefined;
 
